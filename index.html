@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panini_Anime_Cards</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Panini Anime Card Generator</h1>
+    </header>
+    <main>
+        <form id="form">
+            <label for="animeTitle">Anime Title</label>
+            <input type="text" class="animeTitle" name="animeTitle" placeholder="Anime Title">
+
+            <label for="bestCharacter">Best Character</label>
+            <input type="text" id="bestCharacter" name="bestCharacter" placeholder="Best Character">
+
+            <label for="genre">Anime Genre</label>
+            <select name="genre" id="genre" class="anime genre">
+                <option value="Shounen">Shounen</option>
+                <option value="Isekai">Isekai</option>
+                <option value="Romance">Romance</option>
+                <option value="Horror">Horror</option>
+                <option value="Sci-Fi">Sci-Fi</option>
+                <option value="Ecchi">Ecchi</option>
+            </select>
+            
+
+            <label for="seasons">Seasons</label>
+            <input type="text" id="seasons" name="seasons" placeholder="Seasons">
+
+            <label for="quote">Famous Quote</label>
+            <input type="text" id="quote" name="quote" placeholder="Famous Quote">
+
+            <label for="imgURL">Image URL</label>
+            <input type="text" id="imgURL" name="imgURL" placeholder="Image URL">
+
+            <input type="submit" id="btn" name="btn" value="Generate Card">
+        </form>
+        <div class="galleryOutput">
+            <div class="cardOverview">
+                <p class="cardElements"></p>
+            </div>
+        </div>
+    </main>
+
+
+    <script text="text/javascript" src="./assets/js/main.js"></script>
+</body>
+</html>
