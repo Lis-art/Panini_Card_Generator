@@ -24,18 +24,15 @@
 
 p{
     width: 200px;
-    color: rgb(36, 30, 140);
+    color: rgb(143, 138, 241);
     margin: 10px;
     font-size: 1.2rem;
     -webkit-text-stroke: 0.6px;
     -webkit-text-stroke-color: rgb(118, 118, 118);
     font-family: 'JosefinSlab';
-    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.082);
 }
 
-div{
-    opacity: 0.8;
-}
 
 form {
     display: flex;
@@ -86,3 +83,4 @@ body{
     background: rgb(238,174,202);
     background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
 }
+
