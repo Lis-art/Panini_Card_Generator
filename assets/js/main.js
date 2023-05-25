@@ -10,16 +10,6 @@ Erstelle eine Methode, die alle Karten als JSON speichert (Mithilfe von JSON str
 Erstelle unter Nutzung von createElement und appendChild ein HTML-Dokument.
  */
 
-
-//Objekt Template für Traits erstellen
-// alle werte zusammen speichern, von Object und von Input Traits
-// Funktion für Template Daten mit Grid innerHTML abbilden (APPENDChild bla bla) + über output Gallery anzeigen
-//über Funktionauf BTN  die Input Daten an ObjectTemplate über funktion übergeben
-// + (in Form von weiterer Karte) mit NEW (Template) übergeben
-
-
-
-
 function createAnime(e) {
     e.preventDefault(); 
   
@@ -33,10 +23,8 @@ function createAnime(e) {
     const newAnime = new Anime(titleI, characterI, genreI, seasonsI, quoteI, imgURLI);
   
     newAnime.toHTML();
-  
     e.target.reset();
 };
-
 
 class Anime {
     constructor(title, character, genre, seasons, quote, imgURL) {
@@ -47,10 +35,16 @@ class Anime {
       this.quote = quote;
       this.imgURL = imgURL;
     }
-  
 
     toHTML() {
-        const divCard = document.querySelector(".cardOverview");
+
+        let divCard = document.createElement("div");
+        divCard.setAttribute("class", "wrapper");
+        
+        divCard.setAttribute(
+            "style",
+            "background-image: url('" + this.imgURL + "');"
+        );
 
         let createTitleEl = document.createElement("p");
         createTitleEl.textContent = "Title: " + this.title;
@@ -72,11 +66,9 @@ class Anime {
         createQuoteEl.textContent = "Quote: " + this.quote;
         divCard.appendChild(createQuoteEl);
 
-        let createImgEl = document.createElement("img");
-        createImgEl.src = this.imgURL;
-        divCard.appendChild(createImgEl);
+
+        document.querySelector(".gallerySection").appendChild(divCard);
     }
 };
-
 const form = document.querySelector("#form");
 form.addEventListener("submit", createAnime);

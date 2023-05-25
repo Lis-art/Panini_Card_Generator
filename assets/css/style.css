@@ -1,0 +1,88 @@
+@font-face {
+    font-family: JosefinSlab;
+    src: url('../fonts/JosefinSlab-VariableFont_wght.ttf');
+}
+
+.gallerySection {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.wrapper {
+	display: grid;
+	grid-template-columns: 1fr;
+	width: 350px;
+	height: 400px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	justify-items: center;
+	align-items: start;
+	justify-content: center;
+    margin: 10px;
+}
+
+p{
+    width: 200px;
+    color: rgb(36, 30, 140);
+    margin: 10px;
+    font-size: 1.2rem;
+    -webkit-text-stroke: 0.6px;
+    -webkit-text-stroke-color: rgb(118, 118, 118);
+    font-family: 'JosefinSlab';
+    opacity: 1;
+}
+
+div{
+    opacity: 0.8;
+}
+
+form {
+    display: flex;
+    grid-template-columns: 1fr;
+    width: 100%;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 25px;;
+}
+
+label{
+    font-family: 'JosefinSlab';
+    font-size: 1.2rem;
+    display: flex;
+    margin-bottom: 5px;
+}
+
+input{
+    width: 34%;
+    margin-bottom: 10px;
+    font-family: 'JosefinSlab';
+}
+
+select{
+    width: 35%;
+}
+
+option{
+    margin-bottom: 5px;
+    font-family: 'JosefinSlab';
+}
+
+h1{
+    font-family: 'JosefinSlab';
+    font-size: 2rem;
+    text-align: center;
+}
+
+#btn{
+    width: 15%;
+    background-color: rgb(183, 207, 250);
+}
+
+body{
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+}
