@@ -3,36 +3,35 @@
     src: url('../fonts/JosefinSlab-VariableFont_wght.ttf');
 }
 
-.gallerySection {
-	display: flex;
-	flex-wrap: wrap;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
-.wrapper {
-	display: grid;
-	grid-template-columns: 1fr;
-	width: 350px;
-	height: 400px;
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: contain;
-	justify-items: center;
-	align-items: start;
-	justify-content: center;
-    margin: 10px;
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body{
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
 }
 
 p{
     width: 200px;
-    color: rgb(143, 138, 241);
+    color: rgb(211, 189, 255);
     margin: 10px;
-    font-size: 1.2rem;
-    -webkit-text-stroke: 0.6px;
-    -webkit-text-stroke-color: rgb(118, 118, 118);
+    font-size: 2.2rem;
+    padding: 7px;
+    font-weight: bold;
+    -webkit-text-stroke: 1.3px;
+    -webkit-text-stroke-color: rgb(0, 0, 0);
     font-family: 'JosefinSlab';
     background-color: rgba(0, 0, 0, 0.082);
+    text-align: center;
 }
-
 
 form {
     display: flex;
@@ -48,9 +47,10 @@ form {
 
 label{
     font-family: 'JosefinSlab';
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     display: flex;
     margin-bottom: 5px;
+    margin-top: 8px;
 }
 
 input{
@@ -70,17 +70,38 @@ option{
 
 h1{
     font-family: 'JosefinSlab';
-    font-size: 2rem;
+    font-size: 2.5rem;
     text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 #btn{
     width: 15%;
     background-color: rgb(183, 207, 250);
+    padding: 5px;
+    margin-top: 10px;
 }
 
-body{
-    background: rgb(238,174,202);
-    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+.gallerySection {
+	display: flex;
+	flex-wrap: wrap;
 }
 
+.wrapper {
+	display: grid;
+	grid-template-columns: 1fr;
+	width: 350px;
+	height: 400px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	justify-items: center;
+	align-items: start;
+	justify-content: center;
+    margin: 10px;
+    border: 2px solid black;
+    border-radius: 7px;
+    object-fit: cover;
+}
+/*  */

@@ -37,6 +37,9 @@ class Anime {
     }
 
     toHTML() {
+/*         let img;
+        img.src = this.imgURL;
+        img.setAttribute("class", "image"); */
 
         let divCard = document.createElement("div");
         divCard.setAttribute("class", "wrapper");
@@ -45,6 +48,8 @@ class Anime {
             "style",
             "background-image: url('" + this.imgURL + "');"
         );
+
+
 
         let createTitleEl = document.createElement("p");
         createTitleEl.textContent = "Title: " + this.title;
