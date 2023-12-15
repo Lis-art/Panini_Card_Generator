@@ -33,6 +33,14 @@ p{
     text-align: center;
 }
 
+h1{
+    font-family: 'JosefinSlab';
+    font-size: 2.5rem;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
 form {
     display: flex;
     grid-template-columns: 1fr;
@@ -68,14 +76,6 @@ option{
     font-family: 'JosefinSlab';
 }
 
-h1{
-    font-family: 'JosefinSlab';
-    font-size: 2.5rem;
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
 #btn{
     width: 15%;
     background-color: rgb(183, 207, 250);
@@ -104,4 +104,4 @@ h1{
     border-radius: 7px;
     object-fit: cover;
 }
-/*  */
+
